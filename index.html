@@ -10,38 +10,98 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="d-flex justify-content-center p-5">
-        <div class="card" style="width: 60rem;">
-            <div class="card-body bacqua">
-                <h5 class="pb-2 verde">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h5>
-                <form class="pt-3" id="ticketForm">
-                    <label class="pb-3" for="name">Nome:</label>
-                    <input type="text" id="name" required><br>
-                    <label class="pb-3" for="distance">Numero di chilometri da percorrere:</label>
-                    <input type="number" id="distance" required><br>
-                    <label class="pb-3" for="age">Età del passeggero:</label>
-                    <input type="number" id="age" required><br>
-                    <button class="btn btn-primary" type="button" id="calculateButton">Genera</button>
-                    <button class="btn btn-danger">Anulla</button>
-                </form>
+<body class="bacqu">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <img  src="logo.png"  class="navbar-brand w-10 " alt="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Chi siamo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Offerte</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 I nostri servizi
+                </a>
+              </li>
+        
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p> <strong>Avisso: </strong>I minori di età hanno uno sconto del 20% applicato. Le persone di età superiore ai 65 anni hanno uno sconto del 65% applicato. </p>
+                <div class="card">
+                    <div class="card-body bacqua">
+                        <h5> <strong>CALCOLA IL PREZZO DEL TUO BIGLIETTO</strong></h5>
+                        <form class="pt-3" id="ticketForm">
+                            <div class="form-group">
+                                <label for="name">Nome:</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="distance">Numero di chilometri da percorrere:</label>
+                                <input type="number" class="form-control" id="distance" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Età del passeggero:</label>
+                                <input type="number" class="form-control" id="age" required>
+                            </div>
+                            <span class="d-flex justify-content-center pt-3 gap-3">
+                                <button class="btn btn-primary" type="button" id="calculateButton">Genera</button>
+                                <button class="btn btn-danger ml-2">Annulla</button>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-12 pt-4 pb-4">
+                <div class="card">
+                    <div class="card-body bacqua">
+                        <h5 class="pb-2">IL TUO BIGLIETTO</h5>
+                        <p id="nome">Nome passeggero: </p>
+                        <p id="result">Costo Biglietto:</p>
+                        <p id="carrozza">Carrozza numero: </p>
+                        <p id="codice">Codice CP: </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="d-flex justify-content-center ">
-        <div class="card" style="width: 60rem;">
-            <div class="card-body bacqua">
-                <h5 class="pb-2 verde">IL TUO BIGLIETTO</h5>
-                <P id="nome">Nome passaggero: </P>
-                <p id="result">Costo Biglietto: </p>
-                <p id="carrozza">Carrozza numero: </p>
-                <p id="codice">Codice CP: </p>
+    
+      <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contatti</h5>
+                    <ul class="list-unstyled">
+                        <li>Indirizzo: Via dei Treni, 12345, Città</li>
+                        <li>Telefono: 0123-456789</li>
+                        <li>Email: info@trenni.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Links Utili</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Termini e Condizioni</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Domande Frequenti</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </div>
-
-
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024
+    
     <script src="main.js"></script>
 
 </body>
